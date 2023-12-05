@@ -33,6 +33,12 @@ void loadDb() {
             perror(ACLR_FG_RED "Faileed to create the database file." ACLR_RESET);
             exit(1);
         }
+        fclose(db);
+        db = fopen("thygemynd.db", "r+"); // reloads the database with read/write permissions
+        if (db == NULL) {
+            perror(ACLR_FG_RED "Something went wrong with the database setup." ACLR_RESET);
+            exit(1);
+        }
     }
 }
 

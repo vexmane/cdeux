@@ -9,3 +9,5 @@ To build with gcc simply run 'gcc .\cdeux.c -o cdeux'
 <h2> Issues: </h2>
 - The code is messy. <br>
 - If you try to break it you will probably break it. <br>
+
+<h4> Use the command 'help' for the list of commands.</h4>
